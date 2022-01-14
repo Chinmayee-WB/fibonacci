@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+	int a=1,b=1,N,c,sum=0;
+	printf("Enter the number of months: ");
+	scanf("%d",&N);
+	printf("the load in: \t");
+	while(a<=N)
+	{
+		printf("%d\t",a);
+		sum+=a;
+		c=a+b;
+		a=b;
+		b=c;
+	}
+	printf("\n total load received at the end of N month=%d",sum);
+	return 0;
+}
